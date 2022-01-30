@@ -1,0 +1,82 @@
+/* main background  #FFFFFF; */
+/* second background #2F303A; */
+/* logo text #000000 */
+/* second text #212121 */
+/* main text #757575 */
+/* active #2196F3 */
+:root {
+  --main-background: #ffffff;
+  --second-background: #2f303a;
+  --logo-text: #000000;
+  --second-text: #212121;
+  --main-text: #757575;
+  --active: #2196f3;
+}
+
+body {
+  font-family: Roboto;
+  font-style: normal;
+  background-color: var(--main-background);
+}
+
+.nounderline {
+  text-decoration: none;
+}
+.nodot {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--logo-text);
+}
+.logo-span {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: var(--active);
+}
+
+.nav-list .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--second-text);
+}
+
+.nav-list .link:hover,
+.nav-list .link:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--active);
+}
+
+.nav-list .link.current {
+  color: var(--active);
+}
+
+.header-contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--main-text);
+}
+.header-contacts .link:hover,
+.header-contacts .link:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--active);
+}
