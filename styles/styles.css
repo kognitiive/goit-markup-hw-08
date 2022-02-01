@@ -11,6 +11,8 @@
   --title-text-color: #212121;
   --main-text-color: #757575;
   --accent-color: #2196f3;
+  --foter-link-color: rgba(255, 255, 255, 0.6);
+  --secondary-button-bcgcolor: #f5f4fa;
 }
 
 body {
@@ -21,6 +23,20 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Logo */
@@ -102,4 +118,112 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+
+.feature-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.team-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.team-list .text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--second-background-color);
+}
+
+.footer .logo {
+  color: var(--main-background-color);
+}
+
+.footer .logo:hover,
+.footer .logo:focus {
+  color: var(--accent-color);
+}
+
+.footer .text {
+  color: var(--main-background-color);
+}
+
+.footer .link {
+  color: var(--foter-link-color);
+
+  text-decoration: none;
+}
+
+.footer .link:hover,
+.footer .link:focus {
+  color: var(--accent-color);
+}
+.adress {
+  font-style: inherit;
+}
+
+/* Portfolio */
+
+.portfolio-title {
+  color: var(--main-background-color);
+  background-color: var(--second-background-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.secondary-button {
+  color: var(--title-text-color);
+  background-color: var(--secondary-button-bcgcolor);
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.secondary-button:hover,
+.secondary-button:focus {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+}
+
+.cards-list .title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.cards-list .text {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.87;
 }
