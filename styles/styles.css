@@ -12,6 +12,7 @@
   --main-text-color: #757575;
   --accent-color: #2196f3;
   --foter-link-color: rgba(255, 255, 255, 0.6);
+  --primary-button-bcgcolor: #188ce8;
   --secondary-button-bcgcolor: #f5f4fa;
 }
 
@@ -121,6 +122,11 @@ body {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+}
+
+.primary-button:hover,
+.primary-button:focus {
+  background-color: var(--primary-button-bcgcolor);
 }
 
 /* Section */
