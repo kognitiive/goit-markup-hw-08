@@ -51,11 +51,12 @@ body {
   margin-right: auto;
   padding: 0 15px;
   width: 1200px;
-  border: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 /* Header */
 .header {
+  border-bottom: 1px solid #ececec;
 }
 
 .header .container {
@@ -153,27 +154,42 @@ body {
 }
 
 /* Hero */
-.hero-title {
-  color: var(--main-background-color);
+.hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
   background-color: var(--second-background-color);
+}
+
+.hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 30px;
+  width: 696px;
+  outline: 1px solid red;
+
+  color: var(--main-background-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .primary-button {
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+
   color: var(--main-background-color);
   background-color: var(--accent-color);
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-
   cursor: pointer;
+  outline: 1px solid red;
 }
 
 .primary-button:hover,
@@ -182,7 +198,15 @@ body {
 }
 
 /* Section */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-align: center;
+
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -190,35 +214,103 @@ body {
   line-height: 1.17;
 }
 
+/* Features */
+.section.features {
+  padding-bottom: 0;
+}
+
+.feature-list {
+  display: flex;
+}
+
 .feature-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  outline: 1px solid red;
+}
+
+.feature-list .item {
+  width: 270px;
+}
+
+.feature-list .item + .item {
+  margin-left: 30px;
+}
+
+.feature-list .description {
+  margin: 0;
+}
+
+/* What we do */
+.we-do-list {
+  display: flex;
+}
+
+.we-do-list .item + .item {
+  margin-left: 30px;
+}
+
+/* Our team */
+.our-team {
+  background-color: var(--secondary-button-bcgcolor);
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list .item {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.team-list .item + .item {
+  margin-left: 30px;
+}
+
+.team-list .img {
+  margin-bottom: 30px;
 }
 
 .team-list .title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 .team-list .text {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.19;
+  text-align: center;
 }
 
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--second-background-color);
 }
 
 .footer .logo {
+  display: block;
+  margin-bottom: 20px;
   color: var(--main-background-color);
 }
 
@@ -228,10 +320,18 @@ body {
 }
 
 .footer .text {
+  margin-top: 0;
+  margin-bottom: 9px;
   color: var(--main-background-color);
 }
 
+.footer .item + .item {
+  margin-top: 9px;
+}
+
 .footer .link {
+  display: block;
+
   color: var(--foter-link-color);
 
   text-decoration: none;
@@ -258,9 +358,16 @@ body {
   text-transform: uppercase;
 }
 
+/* Filter */
+
 .secondary-button {
+  min-width: 73px;
+  padding: 6px 22px;
+  border-radius: 4px;
+
   color: var(--title-text-color);
   background-color: var(--secondary-button-bcgcolor);
+  border-color: transparent;
 
   font-family: inherit;
   font-weight: 500;
@@ -276,16 +383,62 @@ body {
   background-color: var(--accent-color);
 }
 
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filter-list .item + .item {
+  margin-left: 8px;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
+}
+
+.cards-list .item {
+  margin-right: 30px;
+  margin-bottom: 30px;
+  flex-basis: calc((100% - 120px) / 3);
+
+  /* outline: 1px solid red; */
+}
+
+/* .cards-list .item:nth-child(3n) {
+  margin-right: 0;
+} */
+
+/* .cards-list .item:nth-last-child(-n + 3) {
+  margin-bottom: 0; }*/
+
+.cards-list .img {
+  display: block;
+}
+
+.cards-list .title-text {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
 .cards-list .title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
 
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  /* outline: 1px solid red; */
 }
 
 .cards-list .text {
+  margin: 0;
+
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.87;
