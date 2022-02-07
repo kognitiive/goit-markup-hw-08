@@ -67,6 +67,8 @@ body {
 /* Logo */
 
 .logo {
+  margin-right: 93px;
+
   color: var(--logo-text-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -94,10 +96,6 @@ body {
 
 .site-nav {
   display: flex;
-}
-
-.site-nav .item {
-  margin-left: 93px;
 }
 
 .site-nav .item + .item {
@@ -267,6 +265,8 @@ body {
 }
 
 .team-list .item {
+  background-color: var(--main-background-color);
+
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
 }
@@ -275,10 +275,11 @@ body {
   margin-left: 30px;
 }
 
-.team-list .img {
+.team-list .title-text {
+  margin-top: 30px;
   margin-bottom: 30px;
+  text-align: center;
 }
-
 .team-list .title {
   margin-top: 0;
   margin-bottom: 10px;
@@ -288,7 +289,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .team-list .text {
@@ -297,7 +297,6 @@ body {
 
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 /* Footer */
@@ -395,13 +394,13 @@ body {
 .cards-list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
 .cards-list .item {
-  margin-right: 30px;
-  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-top: 30px;
   flex-basis: calc((100% - 120px) / 3);
 
   /* outline: 1px solid red; */
