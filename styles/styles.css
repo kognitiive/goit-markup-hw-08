@@ -276,8 +276,8 @@ body {
 }
 
 .team-list .title-text {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
 }
 .team-list .title {
@@ -293,7 +293,7 @@ body {
 
 .team-list .text {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
 
   font-size: 16px;
   line-height: 1.19;
