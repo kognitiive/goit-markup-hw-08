@@ -127,9 +127,6 @@ body {
   display: flex;
 }
 
-.header-contacts .item {
-}
-
 .header-contacts .item + .item {
   margin-left: 50px;
 }
@@ -149,6 +146,11 @@ body {
 .header-contacts .link:hover,
 .header-contacts .link:focus {
   color: var(--accent-color);
+}
+
+.icon {
+  width: 16px;
+  height: 12px;
 }
 
 /* Hero */
