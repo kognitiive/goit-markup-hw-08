@@ -55,6 +55,42 @@
                             <use href="./images/symbol-defs.svg#icon-close-black"></use>
                         </svg>
                     </button>
+                    <h3 class="modal-title">
+                        Оставьте свои данные, мы вам перезвоним
+                    </h3>
+                    <form autocomplete="off" class="modal-form">
+                        <label class="modal-label-field">
+                            <span class="modal-text">Имя</span>
+                            <div class="modal-container">
+                                <input type="text" name="username" class="modal-input">
+                                <svg class="field-icon">
+                                    <use href="./images/symbol-defs.svg#icon-person-black"></use>
+                                </svg>
+                            </div> 
+                        </label>
+                        <label class="modal-label-field">
+                            <span class="modal-text">Телефон</span>
+                            <div class="modal-container">
+                                <input type="tel" name="tel" class="modal-input">
+                                <svg class="field-icon">
+                                    <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label class="modal-label-field">
+                            <span class="modal-text">Почта</span>
+                            <div class="modal-container">
+                                <input type="email" name="email" class="modal-input">
+                                <svg class="field-icon">
+                                    <use href="./images/symbol-defs.svg#icon-email-black"></use>
+                                </svg>
+                            </div>
+                        </label>
+                        <label  class="modal-label-field">
+                            <span class="modal-text">Комментарий</span>
+                            <textarea class="modal-textarea" name="comment" rows="6" placeholder="Введите текст"></textarea>
+                        </label>
+                    </form>
                 </div>
             </div>
         </section>
@@ -387,9 +423,26 @@
                                     </svg>
                                 </a>
                             </li>
-                    </div>
-                </li>
-            </ul>
+                        </ul>
+                </div>
+                <div class="footer-item form">
+                    <h3 class="social-title">
+                        Подпишитесь на рассылку
+                    </h3>
+                    <form autocomplete="off" class="form-container">
+                        <label class="form-field">
+                            <input type="email" class="form-input" name="email" placeholder="E-mail">
+                            </label>
+                            <div class="div-submit">
+                                <button type="submit" class="submit-btn">
+                                Подписаться
+                                </button>
+                                <svg class="button-icon">
+                                    <use href="./images/symbol-defs.svg#icon-send"></use>
+                                </svg>
+                            </div>
+                    </form>
+                </div>
         </div>
     </footer>
     <script src="./js/modal.js"></script>
