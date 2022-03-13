@@ -357,8 +357,7 @@ body {
 
   width: 100%;
 
-  padding: 10px 0px;
-  padding-left: 42px;
+  padding: 10px 42px;
 
   border: 1px solid var(--modal-border-color);
   border-radius: 4px;
