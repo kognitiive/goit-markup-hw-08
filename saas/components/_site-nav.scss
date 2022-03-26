@@ -1,28 +1,93 @@
 .page-header {
+  position: relative;
   border-bottom: 1px solid #ececec;
 }
 
-.site-nav {
+.main-nav {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
 
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+
+  background-color: transparent;
+
+  &.is-open {
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    z-index: 999;
+  }
+}
+
+.menu-btn__icon {
+  fill: $title-text-color;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .menu-btn:hover &,
+  .menu-btn:focus & {
+    fill: $accent-color;
+  }
+}
+
+.menu-btn__icon--close {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__icon--menu {
+  display: none;
+}
+
+.menu-btn.is-open .menu-btn__icon--close {
+  display: block;
+}
+
+.menu-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+
+  padding: 48px 40px;
+
+  &.is-open {
+    display: block;
+    background-color: $main-background-color;
+  }
+}
+
+.site-nav {
+  margin-bottom: 302px;
   &__item {
-    margin-right: 50px;
+    margin-bottom: 32px;
   }
   &__item--last {
-    margin-right: 0;
+    margin-bottom: 0;
   }
 }
 
 .site-nav__link {
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+  // padding-top: 32px;
+  // padding-bottom: 32px;
 
-  color: $title-text-color;
   font-weight: 500;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  color: $title-text-color;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -32,21 +97,21 @@
   }
 }
 
-.site-nav__link--current {
-  position: relative;
-  color: $accent-color;
+// .site-nav__link--current {
+//   position: relative;
+//   color: $accent-color;
 
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: block;
-    content: '';
-    width: 100%;
-    height: 4px;
+//   &::after {
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     display: block;
+//     content: '';
+//     width: 100%;
+//     height: 4px;
 
-    background-color: $accent-color;
+//     background-color: $accent-color;
 
-    border-radius: 2px;
-  }
-}
+//     border-radius: 2px;
+//   }
+// }

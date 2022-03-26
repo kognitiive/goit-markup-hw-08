@@ -16,29 +16,46 @@
 <body>
     <!--Header-->
     <header class="page-header">
-        <div class="container container--flex">
-            <a href="./index.html" lang="en" class="logo"><span class="logo__span">Web</span>Studio</a>
+        <div class="container">
         <!--Main nav-->
         <nav class="main-nav">
-            <ul class="site-nav">
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                <li class="site-nav__item site-nav__item--last"><a href="" class="site-nav__link">Контакты</a></li>
-            </ul>
+            <a href="./index.html" lang="en" class="logo"><span class="logo__span">Web</span>Studio</a>
+            <button type="button" class="menu-btn" data-menu-button aria-expanded="false">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="menu-btn__icon menu-btn__icon--menu" href="./images/symbol-defs.svg#icon-menu40px"></use>
+                    <use class="menu-btn__icon menu-btn__icon--close" href="./images/symbol-defs.svg#icon-close40px"></use>
+                </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+                <ul class="site-nav">
+                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
+                    <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
+                    <li class="site-nav__item site-nav__item--last"><a href="" class="site-nav__link">Контакты</a></li>
+                </ul>
+                
+                <!--Mail and Tel-->
+                <ul class="header-contacts">
+                    <li class="header-contacts__item"><a href="tel:+380961111111" class="header-contacts__link">
+                            <svg class="header-contacts__icon" width="10" height="16">
+                                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                            </svg> +38 096 111 11 11</a></li>
+                    <li class="header-contacts__item header-contacts__item--last">
+                        <a href="mailto:info@devstudio.com" class="header-contacts__link header-contacts__link--last">
+                            <svg class="header-contacts__icon" width="16" height="12">
+                                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="menu-social">
+                    <li class="menu-social__item"><a href="" class="menu-social__link">Instagram</a></li>
+                    <li class="menu-social__item"><a href="" class="menu-social__link">Twitter</a></li>
+                    <li class="menu-social__item"><a href="" class="menu-social__link">Facebook</a></li>
+                    <li class="menu-social__item menu-social__item--last"><a href="" class="menu-social__link">LinkedIn</a></li>
+                </ul>
+            </div>
         </nav>
-        <!--Mail and Tel-->
-        <ul class="header-contacts">
-            <li class="header-contacts__item">
-                <a href="mailto:info@devstudio.com" class="header-contacts__link">
-                    <svg class="header-contacts__icon" width="16" height="12">
-                        <use href="./images/symbol-defs.svg#icon-envelope"></use>
-                    </svg>
-                info@devstudio.com</a></li>
-            <li class="header-contacts__item header-contacts__item--last"><a href="tel:+380961111111" class="header-contacts__link">
-                <svg class="header-contacts__icon" width="10" height="16">
-                    <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-                </svg> +38 096 111 11 11</a></li>
-        </ul></div>
+        </div>
     </header>
 
     <!--Main content-->
@@ -443,6 +460,7 @@
                 </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
