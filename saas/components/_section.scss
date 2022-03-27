@@ -1,6 +1,6 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   &--no-padding {
     padding-bottom: 0;
@@ -11,14 +11,16 @@
   }
 
   &__title {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     text-align: center;
 
     color: $title-text-color;
 
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.17;
+
+    text-align: center;
   }
   &__title--hidden {
     position: absolute;
