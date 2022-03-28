@@ -2,8 +2,10 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  &--no-padding {
-    padding-bottom: 0;
+  &--features {
+    @media screen and (min-width: 1200px) {
+      padding-bottom: 0;
+    }
   }
 
   &--white-theme {

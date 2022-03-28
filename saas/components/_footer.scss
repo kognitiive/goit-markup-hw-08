@@ -11,6 +11,14 @@
   &__item--second {
     margin-bottom: 60px;
   }
+
+  &__group {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+  }
 }
 
 .page-footer__logo {
@@ -19,6 +27,10 @@
 
   color: $main-background-color;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 0;
+  }
 
   &:hover,
   &:focus {
@@ -51,7 +63,7 @@
 }
 
 .footer-form__input {
-  width: 100%;
+  width: 450px;
   // width: 358px;
   padding: 15px 16px;
 

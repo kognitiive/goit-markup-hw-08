@@ -12,6 +12,9 @@
   &:focus {
     color: $accent-color;
   }
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
 
   &__span {
     color: $accent-color;

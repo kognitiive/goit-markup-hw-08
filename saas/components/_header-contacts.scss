@@ -1,7 +1,15 @@
 .header-contacts {
   margin-bottom: 64px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    padding: 21px 0;
+  }
+
   &__item {
     margin-bottom: 32px;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 10px;
+    }
     // margin-right: 50px;
   }
 
@@ -12,14 +20,17 @@
 
   &__icon {
     display: none;
-    // margin-right: 10px;
 
-    // fill: currentColor;
+    @media screen and (min-width: 768px) {
+      display: inline-flex;
+      margin-right: 10px;
+      fill: currentColor;
+    }
+    // margin-right: 10px;
   }
 }
 
 .header-contacts__link {
-  // display: flex;
   // align-items: center;
   // padding-top: 32px;
   // padding-bottom: 32px;
@@ -40,16 +51,30 @@
     color: $main-text-color;
   }
 
-  // transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
 
-  // &:hover,
-  // &:focus {
-  //   color: $accent-color;
-  // }
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+
+    color: $main-text-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
 }
 
 .menu-social {
   display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
   &__item {
     position: relative;
