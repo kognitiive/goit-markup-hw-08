@@ -79,6 +79,10 @@
     position: static;
     z-index: 0;
     padding: 0;
+    overflow: hidden;
+  }
+  @media screen and (min-width: 1200px) {
+    overflow: hidden;
   }
 }
 
@@ -90,6 +94,10 @@
     justify-content: center;
     margin-bottom: 0;
     margin-right: 84px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 0;
   }
 
   &__item {

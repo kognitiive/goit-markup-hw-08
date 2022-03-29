@@ -26,6 +26,12 @@
   &__item--last {
     margin-right: 0;
   }
+
+  &--footer {
+    @media screen and (min-width: 1200px) {
+      justify-content: left;
+    }
+  }
 }
 
 .social-links__link {

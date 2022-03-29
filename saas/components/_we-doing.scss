@@ -1,7 +1,12 @@
 .we-doing {
   display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
+
   &__item {
-    // position: relative;
+    position: relative;
     margin-right: 30px;
   }
 
@@ -14,7 +19,7 @@
   }
 
   &__div {
-    // position: absolute;
+    position: absolute;
     bottom: 0;
     left: 0;
 
