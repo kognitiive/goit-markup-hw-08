@@ -149,18 +149,17 @@
   @media screen and (min-width: 768px) {
     color: $accent-color;
   }
+&::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
 
-  &::after {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    display: none;
-    content: '';
-    width: 100%;
-    height: 4px;
+  background-color: $accent-color;
 
-    background-color: $accent-color;
-
-    border-radius: 2px;
-  }
+  border-radius: 2px;
+}
+  
 }
