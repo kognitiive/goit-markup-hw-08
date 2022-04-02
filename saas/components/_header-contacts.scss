@@ -1,6 +1,5 @@
 .header-contacts {
-  margin-bottom: 64px;
-
+margin-bottom: 64px;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
     padding: 21px 0;
@@ -14,7 +13,7 @@
     padding: 0;
   }
 
-  &__item {
+  &__item:not(:last-child) {
     margin-bottom: 32px;
     @media screen and (min-width: 768px) {
       margin-bottom: 10px;
@@ -23,13 +22,6 @@
     @media screen and (min-width: 1200px) {
       margin-bottom: 0;
       margin-right: 30px;
-    }
-  }
-
-  &__item--last {
-    margin-bottom: 0;
-    @media screen and (min-width: 1200px) {
-      margin-right: 0;
     }
   }
 
@@ -92,17 +84,11 @@
     display: none;
   }
 
-  &__item {
+  &__item:not(:last-child) {
     position: relative;
     padding-right: 10px;
     margin-right: 10px;
     border-right: 1px solid $modal-border-color;
-  }
-
-  &__item--last {
-    padding-right: 0;
-    margin-right: 0;
-    border: none;
   }
 
   &__link {

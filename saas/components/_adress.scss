@@ -12,13 +12,10 @@
     color: $main-background-color;
   }
 
-  &__item {
+  &__item:not(:last-child) {
     margin-bottom: 9px;
   }
 
-  &__item--last {
-    margin-bottom: 0;
-  }
 }
 
 .adress__link {

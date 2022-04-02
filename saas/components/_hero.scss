@@ -31,8 +31,9 @@
     @media screen and (max-width:767px) {
       background-image: linear-gradient(to right, $overlay-color, $overlay-color),
       url(../images/hero-tel-img@2x.jpg);
+      // background-size: 480px 400px;
     }
-    @media screen and (max-width:1199px) {
+    @media screen and (min-width:768px) and (max-width:1199px) {
       background-image: linear-gradient(to right, $overlay-color, $overlay-color),
         url(../images/hero-tabl-img@2x.jpg);
     }
